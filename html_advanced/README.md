@@ -1,5 +1,3 @@
-# holbertonschool-web_front_end
-
 guidelines to follow for HTML
 create the skeleton of an HTML5 page
 use semantic HTML tags to structure a web page
