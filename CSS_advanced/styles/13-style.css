@@ -1,0 +1,21 @@
+/* styles/12-style.css */
+
+/* Targeting anchor elements with hyperlinks */
+a[href] {
+	text-decoration: none; /* Remove default underline */
+}
+
+/* Targeting visited state */
+a[href]:visited {
+	font-style: italic; /* Italicize the text */
+}
+
+/* Targeting hover state */
+a[href]:hover {
+	text-decoration: underline; /* Underline on hover */
+}
+
+/* Targeting active state */
+a[href]:active {
+	background-color: var(--color-light-grey); /* Set background color */
+}
