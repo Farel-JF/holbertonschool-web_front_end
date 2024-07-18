@@ -9,7 +9,8 @@
 	--color-light-grey: #f3f3f3;
 	--color-dark-grey: #353535;
 	--text-color: var(--color-black);
-
+	--font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
+	--font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 	/* Fonts */
 	--font-family-base: Open sans, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -53,7 +54,7 @@
 	--nav-item-margin: 0 0 3rem 0;
 	--nav-item-link-hover: var(--color-primary);
 
-	/* Button */
+	/* Buttons */
 	--button-display: inline-block;
 	--button-padding: 1.5rem 3rem;
 	--button-border: 0.2rem solid var(--color-primary);
@@ -105,37 +106,26 @@ a:active {
 	background-color: var(--color-light-grey);
 }
 
-.visually-hidden {
-	display: none;
-}
-
-a:active {
-	background-color: var(--color-light-grey);
-  }
-
-  /* Button class selector */
-  .button {
+.button {
 	display: var(--button-display);
 	padding: var(--button-padding);
 	border: var(--button-border);
 	font-size: var(--button-font-size);
 	color: var(--button-color);
 	text-decoration: var(--button-text-decoration);
-  }
+}
 
-  /* Hover state for .button */
-  .button:hover {
+.button:hover {
 	color: var(--button-hover-color);
 	text-decoration: var(--button-hover-text-decoration);
-	background-color: var(--button-hover-background);
-  }
+	background: var(--button-hover-background);
+}
 
-  /* In dark theme */
-  [data-section-theme="dark"] {
-	--button-color: var(--color-white); /* Override button color */
-  }
+.visually-hidden {
+	display: none;
+}
 
-.card-category {
+.card-category, .section-tagline {
 	color: var(--color-primary);
 }
 
@@ -255,6 +245,7 @@ ul.row {
 	--text-color: var(--color-white);
 	--section-title-color: var(--color-white);
 	background-color: var(--color-black);
+	--button-color: var(--color-white);
 }
 
 .footer-address {
@@ -268,35 +259,35 @@ ul.row {
 .social-link > svg {
 	fill: var(--text-color);
 }
+
 .card-services .card-title {
-	margin: 0; /* Remove margin on all sides */
-  }
+	margin: 0;
+}
 
-  .card-services a {
-	display: block; /* Render as block level elements */
-	padding: 2rem; /* Set padding to 2 times the root element */
-	background-color: var(--color-light-grey); /* Set background color */
-  }
+.card-services a {
+	display: block;
+	padding: 2rem;
+	background-color: var(--color-light-grey);
+}
 
-  .card-services a:hover {
-	color: var(--color-white); /* Set foreground color on hover */
-	background-color: var(--color-primary); /* Set background color on hover */
-	text-decoration: none; /* Remove text decoration */
-  }
+.card-services a:hover {
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	text-decoration: none;
+}
 
-  .card-testimonial {
-	text-align: center; /* Center align text */
-  }
+.card-testimonial {
+	text-align: center;
+}
 
-  .card-testimonial .card-avatar {
-	border-radius: 50%; /* Round border radius */
-	width: 10rem; /* Set width to 10 times the root element */
-	height: 10rem; /* Set height to 10 times the root element */
-  }
+.card-testimonial .card-avatar {
+	border-radius: 50%;
+	width: 10rem;
+	height: 10rem;
+}
 
-  .card-testimonial .card-quote cite {
-	display: block; /* Render as block level element */
-	padding-top: 1.6rem; /* Set padding top to 1.6 times the root element */
-	color: var(--color-primary); /* Set foreground color to color-primary */
-  }
-
+.card-testimonial .card-quote cite {
+	display: block;
+	padding-top: 1rem;
+	color: var(--color-primary);
+}
