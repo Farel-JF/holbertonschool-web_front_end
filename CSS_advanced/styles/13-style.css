@@ -1,21 +1,65 @@
 /* styles/12-style.css */
 
-/* Targeting anchor elements with hyperlinks */
-a[href] {
-	text-decoration: none; /* Remove default underline */
-}
+:root {
+	/* New custom property */
+	--color-light-grey: #f3f3f3;
+  }
 
-/* Targeting visited state */
-a[href]:visited {
-	font-style: italic; /* Italicize the text */
-}
+  /* Targeting anchor elements that contain a hyperlink */
+  a[href] {
+	color: var(--text-color);
+	text-decoration: none;
+  }
 
-/* Targeting hover state */
-a[href]:hover {
-	text-decoration: underline; /* Underline on hover */
-}
+  /* Targeting the visited state */
+  a[href]:visited {
+	color: var(--text-color);
+	font-style: italic;
+  }
 
-/* Targeting active state */
-a[href]:active {
-	background-color: var(--color-light-grey); /* Set background color */
-}
+  /* Targeting the hover state */
+  a[href]:hover {
+	text-decoration: underline;
+  }
+
+  /* Targeting the active state */
+  a[href]:active {
+	background-color: var(--color-light-grey);
+  }
+
+  /* Existing styles remain unchanged */
+  html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+  }
+
+  body {
+	color: var(--text-color);
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-regular);
+	line-height: var(--line-height-base);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-title);
+	font-weight: var(--font-weight-bold);
+  }
+
+  .visually-hidden {
+	display: none;
+  }
+
+  .card-category, .section-tagline {
+	color: var(--color-primary);
+  }
+
+  .section-header {
+	text-align: var(--section-header-align);
+  }
+
+  .section-tagline {
+	font-family: var(--font-family-title);
+	text-transform: var(--section-tagline-transform);
+	font-weight: var(--font-weight-bold);
+  }
