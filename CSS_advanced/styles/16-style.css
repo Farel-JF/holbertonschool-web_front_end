@@ -1,0 +1,13 @@
+.section-tagline {
+	/* Your existing styles for .section-tagline */
+	color: var(--color-primary);
+	font-family: var(--font-family-title);
+	text-transform: var(--section-tagline-transform);
+	font-weight: var(--font-weight-bold);
+  }
+
+  .container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+  }
