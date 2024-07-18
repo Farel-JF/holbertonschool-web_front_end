@@ -1,3 +1,12 @@
+:root {
+	/* Other existing properties */
+	--section-padding: 5rem 0;
+	--section-header-padding: 0 0 3rem;
+	--section-body-padding: 0 0 3rem;
+	--section-footer-padding: 3rem 0 0;
+	--section-footer-align: center;
+	--footer-padding: 5rem 0 1rem;
+  }
 /* Target .section just before the .section-header declaration */
 .section {
 	padding: var(--section-padding);
