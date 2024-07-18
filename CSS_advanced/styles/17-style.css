@@ -1,0 +1,24 @@
+/* Target .section just before the .section-header declaration */
+.section {
+	padding: var(--section-padding);
+  }
+
+  .section-header {
+	padding: var(--section-header-padding);
+  }
+
+  /* Target .section-body after .section-header */
+  .section-body {
+	padding: var(--section-body-padding);
+  }
+
+  /* Target .section-footer after .section-body */
+  .section-footer {
+	padding: var(--section-footer-padding);
+	text-align: var(--section-footer-align);
+  }
+
+  /* Target .footer at the end of your style file */
+  .footer {
+	padding: var(--footer-padding);
+  }
