@@ -13,8 +13,8 @@
     --dark-background-color: var(--color-black);
 
     /* Fonts */
-    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-base: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
 
     /* Font size */
     --font-size-small: 1.2rem;
@@ -53,9 +53,16 @@
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
-
 }
 
+/* Dark theme for sections */
+[data-section-theme="dark"] {
+    --text-color: var(--dark-text-color);
+    --section-title-color: var(--dark-section-title-color);
+    background-color: var(--dark-background-color);
+}
+
+/* Remaining styles unchanged */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -105,13 +112,6 @@ a:active {
 
 .section {
     padding: var(--section-padding);
-}
-
-/* Dark theme for sections */
-[data-section-theme="dark"] {
-    --text-color: var(--dark-text-color);
-    --section-title-color: var(--dark-section-title-color);
-    background-color: var(--dark-background-color);
 }
 
 .section-header {
