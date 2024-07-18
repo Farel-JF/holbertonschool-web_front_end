@@ -1,13 +1,19 @@
+/* styles/3-style.css */
+
 :root {
+    /* Custom font-family properties */
     --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-/* Set body's font-family to font-family-base */
-body {
-    font-family: var(--font-family-base);
-}
+  }
 
-/* Target all heading levels (h1-h6) and set font-family to font-family-title */
-h1, h2, h3, h4, h5, h6 {
+  /* Apply font-family-base to the body */
+  body {
+    font-family: var(--font-family-base);
+  }
+
+  /* Apply font-family-title to all heading tags (h1 to h6) */
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
-}
+  }
+
+  /* Additional styles can be added as needed */
